@@ -18,9 +18,9 @@ This project was developed as part of an internship application for **FuelGrowth
 
 The project adopted **two approaches** for face clustering and performance analysis:
 
-- **First Approach**: This method was effective but **too slow and error-prone** for large datasets. It provided accurate results but was not scalable for real-time or large-scale applications.
+- **First Approach(Video_face_grouping.ipynb)**: This method was effective but **too slow and error-prone** for large datasets. It provided accurate results but was not scalable for real-time or large-scale applications.
 
-- **Second Approach**: After evaluating the performance of the first approach, a faster and more robust method was adopted. This second approach significantly improved the speed and accuracy of the process, making it ideal for handling larger datasets and ensuring better scalability for real-time performance tracking.
+- **Second Approach(Video_face_groupings2_FINAL.ipynb)**: After evaluating the performance of the first approach, a faster and more robust method was adopted. This second approach significantly improved the speed and accuracy of the process, making it ideal for handling larger datasets and ensuring better scalability for real-time performance tracking.
 
 ## Dataset Format
 
