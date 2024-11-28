@@ -18,9 +18,11 @@ This project was developed as part of an internship application for **FuelGrowth
 
 The project adopted **two approaches** for face clustering and performance analysis:
 
-- **First Approach(Video_face_grouping.ipynb)**: This method was effective but **too slow and error-prone** for large datasets. It provided accurate results but was not scalable for real-time or large-scale applications.
+### Approach 1
+In this approach, the workflow involves downloading videos from provided URLs, extracting faces from the videos at regular intervals, and clustering these faces to identify unique influencers. The faces are saved as images, and their embeddings are used for clustering. The average performance score for each influencer is calculated based on the performance of videos they appear in, and the results are saved as a CSV file with representative faces and their associated average performance.
 
-- **Second Approach(Video_face_groupings2_FINAL.ipynb)**: After evaluating the performance of the first approach, a faster and more robust method was adopted. This second approach significantly improved the speed and accuracy of the process, making it ideal for handling larger datasets and ensuring better scalability for real-time performance tracking.
+### Approach 2
+This approach uses pre-trained models for face detection and embedding extraction. It downloads the videos, extracts frames, and processes them to detect faces using the MTCNN model and compute face embeddings with the InceptionResnetV1 model. These embeddings are clustered using DBSCAN, and the average performance for each cluster is calculated. The representative face for each cluster is saved, and the clustering model is serialized for future use.
 
 ## Dataset Format
 
